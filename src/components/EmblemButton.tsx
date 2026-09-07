@@ -17,7 +17,7 @@ export default function EmblemButton({ isOpen, onClick }: EmblemButtonProps) {
       whileHover={{ scale: 1.08 }}
       whileTap={{ scale: 0.92 }}
       transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-      className="fixed bottom-5 sm:bottom-8 left-1/2 -translate-x-1/2 z-50 w-16 h-16 sm:w-[72px] sm:h-[72px] rounded-full bg-[#111111]/90 backdrop-blur-xl border border-white/20 hover:border-white/60 shadow-[0_10px_35px_rgba(0,0,0,0.85)] flex items-center justify-center text-white cursor-pointer select-none transition-colors"
+      className="fixed bottom-[calc(1.25rem+env(safe-area-inset-bottom,0px))] sm:bottom-8 left-1/2 -translate-x-1/2 z-50 w-16 h-16 sm:w-[72px] sm:h-[72px] rounded-full bg-[#111111]/90 backdrop-blur-xl border border-white/20 hover:border-white/60 shadow-[0_10px_35px_rgba(0,0,0,0.85)] flex items-center justify-center text-white cursor-pointer select-none transition-colors touch-target"
     >
       <div className="relative w-8 h-8 flex items-center justify-center">
         {isOpen ? (

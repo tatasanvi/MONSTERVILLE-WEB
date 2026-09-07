@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Syne, Outfit } from "next/font/google";
 import "./globals.css";
 
@@ -28,6 +28,22 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * Viewport export — controls how the browser renders on mobile:
+ * - viewport-fit=cover: extends into Dynamic Island / notch areas
+ * - width=device-width, initial-scale=1: disables iOS auto-zoom
+ * - theme-color: matches the cinematic black background
+ */
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  minimumScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  viewportFit: "cover",
+  themeColor: "#050505",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -36,9 +52,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${syne.variable} ${outfit.variable} h-full antialiased custom-cursor-active selection:bg-white selection:text-black`}
+      className={`${syne.variable} ${outfit.variable} antialiased`}
     >
-      <body className="min-h-full bg-[#050505] text-[#F5F5F5] overflow-x-hidden font-sans">
+      <body className="bg-[#050505] text-[#F5F5F5] selection:bg-white selection:text-black">
         {/* Subtle analog film grain overlay */}
         <div className="noise-overlay" aria-hidden="true" />
         {children}
@@ -46,4 +62,3 @@ export default function RootLayout({
     </html>
   );
 }
-

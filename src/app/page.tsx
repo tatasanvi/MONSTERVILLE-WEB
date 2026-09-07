@@ -9,16 +9,18 @@ import NavigationPortal from "@/components/NavigationPortal";
 import HubHero from "@/components/HubHero";
 
 import WorldView from "@/components/WorldView";
+import BobinoView from "@/components/BobinoView";
 import MusicView from "@/components/MusicView";
 import CinemaView from "@/components/CinemaView";
 import StudiosView from "@/components/StudiosView";
 import SpaceView from "@/components/SpaceView";
 import ShopView from "@/components/ShopView";
+import ContactView from "@/components/ContactView";
 
 import VideoModal from "@/components/VideoModal";
 import CustomCursor from "@/components/CustomCursor";
 
-type WorldKey = "hub" | "world" | "music" | "visuals" | "studios" | "space" | "shop";
+type WorldKey = "hub" | "world" | "bobino" | "music" | "visuals" | "studios" | "space" | "shop" | "contact";
 
 export default function Home() {
   const [currentWorld, setCurrentWorld] = useState<WorldKey>("hub");
@@ -150,14 +152,14 @@ export default function Home() {
   );
 
   return (
-    <main className="fixed inset-0 w-full h-[100dvh] overflow-hidden bg-[#050505] text-[#F5F5F5] select-none">
+    <main className="fixed inset-0 w-full h-[100svh] overflow-hidden bg-[#050505] text-[#F5F5F5] select-none">
       {/* 1.5s Cinematic Preloader */}
       <Preloader />
 
       {/* Spring Custom Cursor (Desktop fine pointers only) */}
       <CustomCursor />
 
-      {/* Dynamic World Rendering (Strict 100dvh, zero scroll) */}
+      {/* Dynamic World Rendering (Strict 100svh, zero scroll) */}
       <AnimatePresence mode="wait">
         {currentWorld === "hub" && (
           <HubHero
@@ -170,6 +172,14 @@ export default function Home() {
           <WorldView
             key="world"
             onBack={() => setCurrentWorld("hub")}
+          />
+        )}
+
+        {currentWorld === "bobino" && (
+          <BobinoView
+            key="bobino"
+            onBack={() => setCurrentWorld("hub")}
+            onSelectWorld={(worldId) => setCurrentWorld(worldId as WorldKey)}
           />
         )}
 
@@ -209,6 +219,13 @@ export default function Home() {
         {currentWorld === "shop" && (
           <ShopView
             key="shop"
+            onBack={() => setCurrentWorld("hub")}
+          />
+        )}
+
+        {currentWorld === "contact" && (
+          <ContactView
+            key="contact"
             onBack={() => setCurrentWorld("hub")}
           />
         )}
