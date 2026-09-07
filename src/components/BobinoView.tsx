@@ -100,7 +100,7 @@ export default function BobinoView({ onBack, onSelectWorld }: BobinoViewProps) {
               RELEASES
             </span>
             <span className="font-mono text-xs sm:text-sm text-white font-medium mt-0.5 block">
-              DESTINY LP
+              NEW RELEASE
             </span>
           </div>
           <div className="p-3 bg-white/[0.02] border border-white/10 rounded-lg">
@@ -127,14 +127,14 @@ export default function BobinoView({ onBack, onSelectWorld }: BobinoViewProps) {
                 onClick={() => onSelectWorld("music")}
                 className="touch-target px-5 py-3 bg-white text-black font-mono text-xs tracking-wider rounded-lg font-semibold hover:bg-white/90 transition-colors"
               >
-                LISTEN TO DESTINY LP →
+                LISTEN TO NEW RELEASE →
               </button>
               <button
                 type="button"
                 onClick={() => onSelectWorld("visuals")}
                 className="touch-target px-5 py-3 border border-white/20 text-white hover:border-white font-mono text-xs tracking-wider rounded-lg transition-colors"
               >
-                CINEMA ARCHIVE
+                CREATOR STUDIO
               </button>
             </>
           )}

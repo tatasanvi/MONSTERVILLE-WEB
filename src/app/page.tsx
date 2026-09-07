@@ -188,7 +188,7 @@ export default function Home() {
             key="music"
             onBack={() => setCurrentWorld("hub")}
             onPlayAudio={toggleMusicAudio}
-            onOpenFilm={() => setActiveVideoTitle("DESTINY // THE FILM")}
+            onOpenFilm={() => setActiveVideoTitle("NEW RELEASE // THE FILM")}
             isPlaying={isMusicPlaying}
           />
         )}

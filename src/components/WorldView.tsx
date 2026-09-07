@@ -29,7 +29,7 @@ export default function WorldView({ onBack }: WorldViewProps) {
       <div className="relative z-10 w-full px-5 sm:px-10 pt-safe shrink-0 py-3 sm:py-4 flex justify-between items-center font-mono-micro text-white/50 text-[9px] sm:text-[10px]">
         <div className="flex items-center gap-2">
           <span className="w-1.5 h-1.5 bg-white rounded-full" />
-          <span className="tracking-[0.3em]">CHAPTER 01 // THE WORLD</span>
+          <span className="tracking-[0.3em]">CHAPTER 01 // MONSTERVILLE MAGAZINE</span>
         </div>
         <button
           onClick={onBack}
@@ -49,7 +49,7 @@ export default function WorldView({ onBack }: WorldViewProps) {
             className="font-display text-white tracking-tighter leading-[0.88]"
             style={{ fontSize: "clamp(34px, 11vw, 88px)" }}
           >
-            WELCOME TO
+            MONSTERVILLE
           </motion.h2>
 
           <motion.h2
@@ -59,7 +59,7 @@ export default function WorldView({ onBack }: WorldViewProps) {
             className="font-display text-white/65 tracking-tighter leading-[0.88]"
             style={{ fontSize: "clamp(34px, 11vw, 88px)" }}
           >
-            MONSTERVILLE.
+            MAGAZINE.
           </motion.h2>
         </div>
 
@@ -70,10 +70,10 @@ export default function WorldView({ onBack }: WorldViewProps) {
           className="mt-5 flex flex-col gap-3 max-w-xl"
         >
           <p className="text-sm sm:text-lg text-white/75 font-light leading-relaxed">
-            A digital city conceived at the bleeding edge of sub-bass frequencies, nocturnal architecture, and raw cinematic energy.
+            The official publication and nocturnal chronicle of Monsterville. Curated dispatches on sonic architecture, underground culture, and raw creative movements.
           </p>
           <p className="text-xs sm:text-sm text-white/40 font-light leading-relaxed hidden sm:block">
-            We operate without boundaries, formulas, or compromise. Every frame, release, and physical silhouette originates from the inner town.
+            Every issue, editorial interview, and archival essay documents the expanding boundary of the inner creative universe.
           </p>
         </motion.div>
       </div>

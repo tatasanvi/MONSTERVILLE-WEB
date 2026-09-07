@@ -13,7 +13,7 @@ interface MusicViewProps {
 const TRACKS = [
   {
     id: "destiny",
-    title: "DESTINY",
+    title: "NEW RELEASE",
     subtitle: "FEAT. A24 SOUND ARCHIVE",
     runtime: "03:48",
     image: "/assets/music/destiny_artwork.jpg",
@@ -88,7 +88,7 @@ export default function MusicView({
       <div className="relative z-10 w-full px-5 sm:px-10 pt-safe shrink-0 py-3 sm:py-4 flex justify-between items-center font-mono-micro text-white/50 text-[9px] sm:text-[10px]">
         <div className="flex items-center gap-2">
           <span className={`w-1.5 h-1.5 rounded-full ${isPlaying ? "bg-[#FF5A1F] animate-pulse" : "bg-white/40"}`} aria-hidden />
-          <span className="tracking-[0.3em]">CHAPTER 03 // MUSIC</span>
+          <span className="tracking-[0.3em]">CHAPTER 03 // NEW RELEASE</span>
         </div>
         <button
           onClick={onBack}

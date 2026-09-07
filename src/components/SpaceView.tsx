@@ -47,7 +47,7 @@ export default function SpaceView({ onBack, onPlayTone }: SpaceViewProps) {
       <div className="relative z-10 w-full px-5 sm:px-10 pt-safe shrink-0 py-3 sm:py-4 flex justify-between items-center font-mono-micro text-white/50 text-[9px] sm:text-[10px]">
         <div className="flex items-center gap-2">
           <span className="w-1.5 h-1.5 bg-violet-400 rounded-full animate-pulse" />
-          <span className="tracking-[0.3em]">CHAPTER 06 // PARALLEL REALITY</span>
+          <span className="tracking-[0.3em]">CHAPTER 06 // SPACE ACADEMY</span>
         </div>
         <button
           onClick={onBack}
@@ -64,10 +64,10 @@ export default function SpaceView({ onBack, onPlayTone }: SpaceViewProps) {
         </span>
 
         <h2
-          className="font-display leading-none text-transparent bg-clip-text bg-gradient-to-b from-white via-white/85 to-white/20 tracking-tighter"
-          style={{ fontSize: "clamp(52px, 16vw, 96px)" }}
+          className="font-display leading-none text-transparent bg-clip-text bg-gradient-to-b from-white via-white/85 to-white/20 tracking-tighter text-center"
+          style={{ fontSize: "clamp(32px, 10vw, 76px)" }}
         >
-          SPACE
+          SPACE ACADEMY
         </h2>
 
         <p className="max-w-[280px] text-center font-light text-white/55 leading-relaxed font-sans" style={{ fontSize: "clamp(9px, 2.5vw, 13px)" }}>

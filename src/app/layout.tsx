@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title: "MONSTERVILLE | Digital City & Creative Universe",
   description:
     "MONSTERVILLE is a digital city, music universe, and creative world. An immersive audiovisual experience.",
-  keywords: ["Monsterville", "Music Universe", "Destiny", "Creative Studio", "Film Archive"],
+  keywords: ["Monsterville", "Music Universe", "New Release", "Creator Studio", "Space Academy", "Monsterville Magazine", "Store"],
   openGraph: {
     title: "MONSTERVILLE | Digital City & Creative Universe",
     description: "Enter Monsterville. Less UI. More Atmosphere. A cinematic artist world.",

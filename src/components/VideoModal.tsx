@@ -53,7 +53,7 @@ export default function VideoModal({ isOpen, onClose, title }: VideoModalProps) 
           {/* Top Bar */}
           <div className="w-full flex justify-between items-center font-mono-micro text-white/60 text-[10px] sm:text-xs pt-safe mt-2 sm:mt-0">
             <span className="tracking-[0.25em] sm:tracking-[0.3em] truncate max-w-[200px] sm:max-w-none">
-              MONSTERVILLE CINEMA ARCHIVE // 4K MASTER
+              MONSTERVILLE CREATOR STUDIO // 4K MASTER
             </span>
             <button
               onClick={onClose}

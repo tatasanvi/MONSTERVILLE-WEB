@@ -37,7 +37,7 @@ const PRODUCTS: Product[] = [
   },
   {
     id: "vinyl-boxset",
-    name: "DESTINY 12\" BOXSET",
+    name: "NEW RELEASE 12\" BOXSET",
     price: 85,
     edition: "03 // LIMITED 500 COPIES",
     image: "/assets/music/destiny_artwork.jpg",
@@ -98,7 +98,7 @@ export default function ShopView({ onBack }: ShopViewProps) {
       <div className="relative z-10 w-full px-5 sm:px-10 pt-safe shrink-0 py-3 sm:py-4 flex justify-between items-center font-mono-micro text-white/50 text-[9px] sm:text-[10px]">
         <div className="flex items-center gap-2">
           <span className="w-1.5 h-1.5 bg-white rounded-full" />
-          <span className="tracking-[0.3em]">CHAPTER 07 // BOUTIQUE</span>
+          <span className="tracking-[0.3em]">CHAPTER 07 // STORE</span>
         </div>
         <div className="flex items-center gap-2">
           <button

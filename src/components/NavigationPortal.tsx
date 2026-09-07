@@ -11,13 +11,13 @@ interface NavigationPortalProps {
 }
 
 const MENU_ITEMS = [
-  { id: "world", label: "THE WORLD", subtitle: "ORIGIN & MONOLITH", num: "01" },
+  { id: "world", label: "MONSTERVILLE MAGAZINE", subtitle: "EDITORIAL & ARTICLES", num: "01" },
   { id: "bobino", label: "BOBINO", subtitle: "THE ARTIST // MONSTERVILLE", num: "02" },
-  { id: "music", label: "DESTINY // MUSIC", subtitle: "RELEASES & STEMS", num: "03" },
-  { id: "visuals", label: "CINEMA ARCHIVE", subtitle: "35MM FILM REELS", num: "04" },
+  { id: "music", label: "NEW RELEASE", subtitle: "RELEASES & STEMS", num: "03" },
+  { id: "visuals", label: "CREATOR STUDIO", subtitle: "35MM FILM REELS", num: "04" },
   { id: "studios", label: "STUDIOS", subtitle: "PARIS • TOKYO • LA", num: "05" },
-  { id: "space", label: "PARALLEL SPACE", subtitle: "432HZ FREQUENCY", num: "06" },
-  { id: "shop", label: "EDITORIAL BOUTIQUE", subtitle: "LIMITED GARMENTS", num: "07" },
+  { id: "space", label: "SPACE ACADEMY", subtitle: "432HZ FREQUENCY", num: "06" },
+  { id: "shop", label: "STORE", subtitle: "LIMITED GARMENTS", num: "07" },
   { id: "contact", label: "CONTACT", subtitle: "TRANSMIT A MESSAGE", num: "08" },
 ];
 

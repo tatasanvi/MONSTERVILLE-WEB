@@ -21,37 +21,37 @@ interface HubSpotlight {
 const SPOTLIGHTS: HubSpotlight[] = [
   {
     id: "shop",
-    title: "SHOP",
+    title: "STORE",
     subtitle: "WORLDWIDE GARMENTS // EDITION 2026",
-    category: "BOUTIQUE",
+    category: "STORE",
     image: "/assets/shop/worldwide_tee.jpg",
   },
   {
     id: "music",
-    title: "DESTINY",
-    subtitle: "THE NEW RELEASE // A24 SOUND ARCHIVE",
+    title: "NEW RELEASE",
+    subtitle: "A24 SOUND ARCHIVE // TRANSMISSION",
     category: "ALBUM",
     image: "/assets/music/destiny_artwork.jpg",
   },
   {
     id: "visuals",
-    title: "CINEMA",
+    title: "CREATOR STUDIO",
     subtitle: "35MM ANAMORPHIC FOOTAGE // RAW MASTER",
-    category: "FILM ARCHIVE",
+    category: "CREATOR STUDIO",
     image: "/assets/visuals/visual_film_still.jpg",
   },
   {
     id: "world",
-    title: "THE WORLD",
-    subtitle: "NOCTURNAL ARCHITECTURE // SECTOR 0",
-    category: "ORIGIN",
+    title: "MONSTERVILLE MAGAZINE",
+    subtitle: "EDITORIAL & NOCTURNAL ARCHITECTURE",
+    category: "MAGAZINE",
     image: "/assets/world/monolith.jpg",
   },
   {
     id: "space",
-    title: "SPACE",
+    title: "SPACE ACADEMY",
     subtitle: "AUDIOVISUAL DIMENSION // 432HZ",
-    category: "PARALLEL REALITY",
+    category: "SPACE ACADEMY",
     image: "/assets/space/space_dimension.jpg",
   },
 ];
@@ -222,8 +222,8 @@ export default function HubHero({ onSelectWorld }: HubHeroProps) {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.35 }}
-              className="font-display text-white group-hover:text-white/80 transition-colors"
-              style={{ fontSize: "clamp(28px, 9vw, 64px)" }}
+              className="font-display text-white group-hover:text-white/80 transition-colors tracking-tight"
+              style={{ fontSize: "clamp(20px, 6.8vw, 60px)" }}
             >
               {spotlight.title}
             </motion.h2>
