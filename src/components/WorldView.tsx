@@ -27,27 +27,27 @@ export default function WorldView({ onBack }: WorldViewProps) {
 
       {/* Top Bar */}
       <div className="relative z-10 w-full px-5 sm:px-10 pt-safe shrink-0 py-3 sm:py-4 flex justify-between items-center font-mono-micro text-white/50 text-[9px] sm:text-[10px]">
-        <div className="flex items-center gap-2">
-          <span className="w-1.5 h-1.5 bg-white rounded-full" />
-          <span className="tracking-[0.3em]">CHAPTER 01 // MONSTERVILLE MAGAZINE</span>
+        <div className="flex items-center gap-2 min-w-0 pr-2">
+          <span className="w-1.5 h-1.5 bg-white rounded-full shrink-0" />
+          <span className="tracking-[0.2em] sm:tracking-[0.3em] truncate">CHAPTER 01 // MONSTERVILLE MAGAZINE</span>
         </div>
         <button
           onClick={onBack}
-          className="text-white hover:text-white/70 px-3 py-1.5 border border-white/20 hover:border-white rounded-full transition-colors cursor-pointer tracking-[0.2em]"
+          className="text-white hover:text-white/70 px-3 py-1.5 border border-white/20 hover:border-white rounded-full transition-colors cursor-pointer tracking-[0.2em] shrink-0"
         >
           [ HUB ✕ ]
         </button>
       </div>
 
       {/* Center Manifesto */}
-      <div className="relative z-10 flex-1 flex flex-col justify-center px-5 sm:px-10 min-h-0">
-        <div className="flex flex-col gap-1 overflow-hidden">
+      <div className="relative z-10 flex-1 flex flex-col justify-center px-5 sm:px-10 min-h-0 w-full max-w-4xl mx-auto">
+        <div className="flex flex-col gap-1 w-full overflow-hidden">
           <motion.h2
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="font-display text-white tracking-tighter leading-[0.88]"
-            style={{ fontSize: "clamp(34px, 11vw, 88px)" }}
+            className="font-display text-white tracking-tighter leading-[0.88] max-w-full"
+            style={{ fontSize: "clamp(20px, 6.6vw, 84px)" }}
           >
             MONSTERVILLE
           </motion.h2>
@@ -56,8 +56,8 @@ export default function WorldView({ onBack }: WorldViewProps) {
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="font-display text-white/65 tracking-tighter leading-[0.88]"
-            style={{ fontSize: "clamp(34px, 11vw, 88px)" }}
+            className="font-display text-white/65 tracking-tighter leading-[0.88] max-w-full"
+            style={{ fontSize: "clamp(20px, 6.6vw, 84px)" }}
           >
             MAGAZINE.
           </motion.h2>

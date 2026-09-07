@@ -31,7 +31,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
             filter: "blur(16px)",
             transition: { duration: 0.75, ease: [0.16, 1, 0.3, 1] },
           }}
-          className="fixed inset-0 w-screen h-[100svh] bg-[#050505] z-[999999] flex flex-col items-center justify-center select-none overflow-hidden"
+          className="fixed inset-0 w-full h-[100svh] bg-[#050505] z-[999999] flex flex-col items-center justify-center select-none overflow-hidden"
         >
           {/* Film grain scanline */}
           <div

@@ -62,7 +62,7 @@ export default function NavigationPortal({
             dragElastic={{ top: 0, bottom: 0.3 }}
             onDragEnd={handleDragEnd}
             style={{ touchAction: "pan-x" }} // allow horizontal swipe-back on iOS
-            className="fixed inset-0 z-40 w-screen h-[100svh] bg-[#050505]/97 backdrop-blur-2xl flex flex-col justify-between overflow-hidden select-none"
+            className="fixed inset-0 z-40 w-full h-[100svh] bg-[#050505]/97 backdrop-blur-2xl flex flex-col justify-between overflow-hidden select-none"
           >
             {/* Drag handle indicator */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 pt-3 z-50 pointer-events-none">
@@ -104,19 +104,19 @@ export default function NavigationPortal({
                     whileTap={{ scale: 0.97, x: 6 }}
                     className="group flex flex-col items-center cursor-pointer focus:outline-none w-full py-1.5 border-b border-white/[0.07] last:border-b-0 active:bg-white/[0.03] transition-colors rounded-sm"
                   >
-                    <div className="flex items-baseline gap-2 sm:gap-3">
-                      <span className="font-mono-micro text-[8px] text-white/20 group-hover:text-white/55 transition-colors">
+                    <div className="flex items-baseline justify-center gap-2 sm:gap-3 max-w-full px-2">
+                      <span className="font-mono-micro text-[8px] text-white/30 group-hover:text-white/60 transition-colors shrink-0">
                         {item.num}
                       </span>
                       <span
-                        className="font-display text-white/65 group-hover:text-white transition-all duration-250 whitespace-nowrap tracking-tight"
-                        style={{ fontSize: "clamp(17px, 4.6vw, 44px)" }}
+                        className="font-display text-white/70 group-hover:text-white transition-all duration-250 tracking-tight text-center truncate"
+                        style={{ fontSize: "clamp(12px, 3.4vw, 36px)" }}
                       >
                         {item.label}
                       </span>
                     </div>
                     <span
-                      className="font-mono-micro text-white/22 group-hover:text-white/50 tracking-[0.22em]"
+                      className="font-mono-micro text-white/25 group-hover:text-white/50 tracking-[0.22em] text-center"
                       style={{ fontSize: "clamp(6px, 1.7vw, 8px)" }}
                     >
                       {item.subtitle}

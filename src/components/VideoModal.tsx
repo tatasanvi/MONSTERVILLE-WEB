@@ -43,7 +43,7 @@ export default function VideoModal({ isOpen, onClose, title }: VideoModalProps) 
           dragElastic={{ top: 0, bottom: 0.3 }}
           onDragEnd={handleDragEnd}
           style={{ touchAction: "pan-x" }}
-          className="fixed inset-0 w-screen h-[100svh] z-[999999] bg-[#030303] flex flex-col justify-between p-4 sm:p-10 overflow-hidden select-none"
+          className="fixed inset-0 w-full h-[100svh] z-[999999] bg-[#030303] flex flex-col justify-between p-4 sm:p-10 overflow-hidden select-none"
         >
           {/* Mobile Drag Handle */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 pt-2.5 z-50 pointer-events-none sm:hidden">

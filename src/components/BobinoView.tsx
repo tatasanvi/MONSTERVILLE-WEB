@@ -57,7 +57,7 @@ export default function BobinoView({ onBack, onSelectWorld }: BobinoViewProps) {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
             className="font-display text-white tracking-tighter leading-[0.88]"
-            style={{ fontSize: "clamp(38px, 11vw, 84px)" }}
+            style={{ fontSize: "clamp(24px, 8vw, 84px)" }}
           >
             BOBINO BEATS.
           </motion.h1>
