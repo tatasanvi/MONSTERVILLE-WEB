@@ -35,9 +35,9 @@ const SPOTLIGHTS: HubSpotlight[] = [
   },
   {
     id: "visuals",
-    title: "CREATOR STUDIO",
+    title: "CREATOR STUDIOS",
     subtitle: "35MM ANAMORPHIC FOOTAGE // RAW MASTER",
-    category: "CREATOR STUDIO",
+    category: "CREATOR STUDIOS",
     image: "/assets/visuals/visual_film_still.jpg",
   },
   {

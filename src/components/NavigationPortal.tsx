@@ -12,13 +12,12 @@ interface NavigationPortalProps {
 
 const MENU_ITEMS = [
   { id: "world", label: "MONSTERVILLE MAGAZINE", subtitle: "EDITORIAL & ARTICLES", num: "01" },
-  { id: "bobino", label: "BOBINO", subtitle: "THE ARTIST // MONSTERVILLE", num: "02" },
+  { id: "bobino", label: "BOBINO BEATS", subtitle: "THE ARTIST // MONSTERVILLE", num: "02" },
   { id: "music", label: "NEW RELEASE", subtitle: "RELEASES & STEMS", num: "03" },
-  { id: "visuals", label: "CREATOR STUDIO", subtitle: "35MM FILM REELS", num: "04" },
-  { id: "studios", label: "STUDIOS", subtitle: "PARIS • TOKYO • LA", num: "05" },
-  { id: "space", label: "SPACE ACADEMY", subtitle: "432HZ FREQUENCY", num: "06" },
-  { id: "shop", label: "STORE", subtitle: "LIMITED GARMENTS", num: "07" },
-  { id: "contact", label: "CONTACT", subtitle: "TRANSMIT A MESSAGE", num: "08" },
+  { id: "visuals", label: "CREATOR STUDIOS", subtitle: "35MM FILM REELS", num: "04" },
+  { id: "space", label: "SPACE ACADEMY", subtitle: "432HZ FREQUENCY", num: "05" },
+  { id: "shop", label: "STORE", subtitle: "LIMITED GARMENTS", num: "06" },
+  { id: "contact", label: "CONTACT", subtitle: "TRANSMIT A MESSAGE", num: "07" },
 ];
 
 // Swipe down threshold in px to dismiss the menu

@@ -12,7 +12,6 @@ import WorldView from "@/components/WorldView";
 import BobinoView from "@/components/BobinoView";
 import MusicView from "@/components/MusicView";
 import CinemaView from "@/components/CinemaView";
-import StudiosView from "@/components/StudiosView";
 import SpaceView from "@/components/SpaceView";
 import ShopView from "@/components/ShopView";
 import ContactView from "@/components/ContactView";
@@ -20,7 +19,7 @@ import ContactView from "@/components/ContactView";
 import VideoModal from "@/components/VideoModal";
 import CustomCursor from "@/components/CustomCursor";
 
-type WorldKey = "hub" | "world" | "bobino" | "music" | "visuals" | "studios" | "space" | "shop" | "contact";
+type WorldKey = "hub" | "world" | "bobino" | "music" | "visuals" | "space" | "shop" | "contact";
 
 export default function Home() {
   const [currentWorld, setCurrentWorld] = useState<WorldKey>("hub");
@@ -198,13 +197,6 @@ export default function Home() {
             key="visuals"
             onBack={() => setCurrentWorld("hub")}
             onOpenFilm={(title) => setActiveVideoTitle(title)}
-          />
-        )}
-
-        {currentWorld === "studios" && (
-          <StudiosView
-            key="studios"
-            onBack={() => setCurrentWorld("hub")}
           />
         )}
 

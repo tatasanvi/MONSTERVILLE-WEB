@@ -12,7 +12,7 @@ const FILMS = [
   {
     id: "film-01",
     title: "NEW RELEASE // THE FILM",
-    subtitle: "DIRECTED BY CREATOR STUDIO",
+    subtitle: "DIRECTED BY CREATOR STUDIOS",
     runtime: "06:12",
     format: "35MM ANAMORPHIC",
     image: "/assets/visuals/visual_film_still.jpg",
@@ -69,7 +69,7 @@ export default function CinemaView({ onBack, onOpenFilm }: CinemaViewProps) {
       <div className="relative z-10 w-full px-5 sm:px-10 pt-safe shrink-0 py-3 sm:py-4 flex justify-between items-center font-mono-micro text-white/50 text-[9px] sm:text-[10px]">
         <div className="flex items-center gap-2">
           <span className="w-1.5 h-1.5 bg-white rounded-full" aria-hidden />
-          <span className="tracking-[0.3em]">CHAPTER 04 // CREATOR STUDIO</span>
+          <span className="tracking-[0.3em]">CHAPTER 04 // CREATOR STUDIOS</span>
         </div>
         <button
           onClick={onBack}

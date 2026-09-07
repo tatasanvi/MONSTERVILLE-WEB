@@ -30,7 +30,7 @@ export default function BobinoView({ onBack, onSelectWorld }: BobinoViewProps) {
       <div className="relative z-10 w-full px-5 sm:px-10 pt-safe shrink-0 py-3 sm:py-4 flex justify-between items-center font-mono-micro text-white/50 text-[9px] sm:text-[10px]">
         <div className="flex items-center gap-2">
           <span className="w-1.5 h-1.5 bg-[#FF5A1F] rounded-full" />
-          <span className="tracking-[0.3em]">CHAPTER 02 // BOBINO</span>
+          <span className="tracking-[0.3em]">CHAPTER 02 // BOBINO BEATS</span>
         </div>
         <button
           onClick={onBack}
@@ -59,7 +59,7 @@ export default function BobinoView({ onBack, onSelectWorld }: BobinoViewProps) {
             className="font-display text-white tracking-tighter leading-[0.88]"
             style={{ fontSize: "clamp(38px, 11vw, 84px)" }}
           >
-            BOBINO.
+            BOBINO BEATS.
           </motion.h1>
 
           <motion.p
@@ -134,7 +134,7 @@ export default function BobinoView({ onBack, onSelectWorld }: BobinoViewProps) {
                 onClick={() => onSelectWorld("visuals")}
                 className="touch-target px-5 py-3 border border-white/20 text-white hover:border-white font-mono text-xs tracking-wider rounded-lg transition-colors"
               >
-                CREATOR STUDIO
+                CREATOR STUDIOS
               </button>
             </>
           )}
